@@ -1,0 +1,11 @@
+# Copyright (C) 2019-2022 Explore.dev - All Rights Reserved
+# Unauthorized copying of this file, via any medium is strictly prohibited
+# Proprietary and confidential
+
+apiVersion: reviewpad.com/v1alpha
+
+rules:
+  - name: isDraft
+    kind: pullrequest
+    description: Checks if pull request is draft using built-in
+    spec: $isDraft()
