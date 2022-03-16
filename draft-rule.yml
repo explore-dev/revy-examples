@@ -5,7 +5,7 @@
 apiVersion: reviewpad.com/v1alpha
 
 rules:
-  - name: isDraft
-    kind: pullrequest
+  isDraft:
+    kind: patch
     description: Checks if pull request is draft using built-in
     spec: $isDraft()
